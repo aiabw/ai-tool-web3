@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具导航 - 发现全球最佳AI工具 | aiabw.com</title>
+    <meta name="description" content="全球AI工具导航平台，收录最全面的中英文AI工具，涵盖文本生成、图像创作、代码助手、Web3 AI等领域">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Web3 -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <!-- 顶部通知栏 -->
+    <div class="announcement-bar">
+        <div class="container">
+            <span>🚀 已收录 287+ 款优质AI工具 | 每日更新</span>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <i class="fas fa-robot"></i>
+                    <span>AI导航</span>
+                </a>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">首页</a></li>
+                    <li><a href="#categories" class="nav-link">分类</a></li>
+                    <li><a href="#featured" class="nav-link">推荐</a></li>
+                    <li><a href="#web3" class="nav-link">Web3 AI</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="global-search" placeholder="搜索AI工具...">
+                    <button id="search-btn">搜索</button>
+                </div>
+                <button class="wallet-btn" id="connect-wallet">
+                    <i class="fas fa-wallet"></i>
+                    <span>连接钱包</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <!-- 英雄区域 -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>探索AI无限可能</h1>
+                    <p>发现全球最优秀的AI工具，提升您的工作效率与创造力</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">287</div>
+                            <div class="stat-label">AI工具</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">分类</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">156</div>
+                            <div class="stat-label">免费工具</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-search">
+                        <input type="text" id="hero-search" placeholder="输入工具名称、功能或关键词...">
+                        <button id="hero-search-btn">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类区域 -->
+        <section class="categories-section" id="categories">
+            <div class="container">
+                <h2>热门分类</h2>
+                <div class="categories-grid" id="categories-grid">
+                    <!-- 动态加载 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 推荐工具 -->
+        <section class="featured-section" id="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🔥 热门推荐</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">全部</button>
+                        <button class="filter-btn" data-filter="free">免费</button>
+                        <button class="filter-btn" data-filter="new">新品</button>
+                    </div>
+                </div>
+                <div class="tools-container" id="tools-container">
+                    <!-- 动态加载 -->
+                </div>
+                <div class="load-more">
+                    <button id="load-more-btn">加载更多</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web3 AI -->
+        <section class="web3-section" id="web3">
+            <div class="container">
+                <h2><i class="fab fa-ethereum"></i> Web3 AI 生态</h2>
+                <p>探索去中心化人工智能的未来</p>
+                <div class="web3-tools" id="web3-tools">
+                    <!-- 动态加载 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 提交工具 -->
+        <section class="submit-section">
+            <div class="container">
+                <h2>提交你的AI工具</h2>
+                <p>想让你的AI工具被更多人发现？提交给我们</p>
+                <button id="submit-tool-btn">提交工具</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI工具导航</h3>
+                    <p>为您提供最新、最全面的AI工具导航服务</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#categories">分类</a></li>
+                        <li><a href="#featured">推荐</a></li>
+                        <li><a href="#web3">Web3 AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="mailto:contact@aiabw.com">邮箱</a></li>
+                        <li><a href="#submit">提交工具</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI工具导航. 保留所有权利. aiabw.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/web3.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "ai-tool-navigation",
+  "version": "2.0.0",
+  "description": "AI工具导航网站 - 纯静态版本",
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'Static site - no build process needed'"
+  },
+  "keywords": [
+    "ai",
+    "tools", 
+    "navigation",
+    "web3",
+    "static-site"
+  ],
+  "author": "aiabw.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiabw/ai-tool-navigation"
+  }
+}

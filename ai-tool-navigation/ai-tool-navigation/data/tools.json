@@ -1,0 +1,174 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "文本生成",
+      "icon": "fas fa-comment-dots",
+      "description": "AI写作助手和内容生成工具"
+    },
+    {
+      "id": 2,
+      "name": "图像生成",
+      "icon": "fas fa-palette",
+      "description": "AI绘画和图像创作工具"
+    },
+    {
+      "id": 3,
+      "name": "语音处理",
+      "icon": "fas fa-volume-up",
+      "description": "语音识别和合成工具"
+    },
+    {
+      "id": 4,
+      "name": "代码助手",
+      "icon": "fas fa-code",
+      "description": "AI编程和代码生成工具"
+    },
+    {
+      "id": 5,
+      "name": "视频生成",
+      "icon": "fas fa-film",
+      "description": "AI视频创作和编辑工具"
+    },
+    {
+      "id": 6,
+      "name": "数据分析",
+      "icon": "fas fa-chart-bar",
+      "description": "AI数据分析和可视化工具"
+    },
+    {
+      "id": 7,
+      "name": "聊天机器人",
+      "icon": "fas fa-robot",
+      "description": "智能对话和客服机器人"
+    },
+    {
+      "id": 8,
+      "name": "Web3 AI",
+      "icon": "fab fa-ethereum",
+      "description": "区块链和去中心化AI工具"
+    }
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "name": "ChatGPT",
+      "description": "OpenAI开发的强大对话AI，可用于多种文本生成任务，支持中英文对话和内容创作",
+      "category": "文本生成",
+      "url": "https://chat.openai.com",
+      "icon": "fas fa-comment-dots",
+      "tags": ["文本生成", "对话AI", "写作助手", "免费"],
+      "isWeb3": false,
+      "isFree": true,
+      "isNew": false,
+      "featured": true,
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Midjourney",
+      "description": "AI图像生成工具，通过文本描述创建高质量艺术图像，支持多种艺术风格",
+      "category": "图像生成",
+      "url": "https://midjourney.com",
+      "icon": "fas fa-palette",
+      "tags": ["图像生成", "AI绘画", "创意设计", "付费"],
+      "isWeb3": false,
+      "isFree": false,
+      "isNew": false,
+      "featured": true,
+      "rating": 4.7
+    },
+    {
+      "id": 3,
+      "name": "GitHub Copilot",
+      "description": "AI代码助手，基于OpenAI技术，帮助开发者更快编写代码，支持多种编程语言",
+      "category": "代码助手",
+      "url": "https://github.com/features/copilot",
+      "icon": "fas fa-code",
+      "tags": ["代码生成", "编程助手", "AI开发", "付费"],
+      "isWeb3": false,
+      "isFree": false,
+      "isNew": false,
+      "featured": true,
+      "rating": 4.6
+    },
+    {
+      "id": 4,
+      "name": "DALL-E 3",
+      "description": "OpenAI的最新图像生成模型，根据文本创建逼真图像，理解复杂提示词",
+      "category": "图像生成",
+      "url": "https://openai.com/dall-e",
+      "icon": "fas fa-image",
+      "tags": ["图像生成", "AI绘画", "创意工具", "付费"],
+      "isWeb3": false,
+      "isFree": false,
+      "isNew": true,
+      "featured": false,
+      "rating": 4.5
+    },
+    {
+      "id": 5,
+      "name": "Baidu文心一言",
+      "description": "百度开发的对话式AI，深度优化中文理解和生成，支持多种应用场景",
+      "category": "文本生成",
+      "url": "https://yiyan.baidu.com",
+      "icon": "fas fa-language",
+      "tags": ["中文AI", "对话机器人", "文本生成", "免费"],
+      "isWeb3": false,
+      "isFree": true,
+      "isNew": false,
+      "featured": true,
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "name": "Ocean Protocol",
+      "description": "去中心化数据交换协议，为AI提供安全的数据市场，保护数据隐私",
+      "category": "Web3 AI",
+      "url": "https://oceanprotocol.com",
+      "icon": "fas fa-database",
+      "tags": ["数据市场", "区块链", "去中心化", "Web3"],
+      "isWeb3": true,
+      "isFree": true,
+      "isNew": false,
+      "featured": true,
+      "rating": 4.2
+    },
+    {
+      "id": 7,
+      "name": "Numerai",
+      "description": "基于区块链的AI对冲基金和预测市场，通过加密货币激励AI模型开发",
+      "category": "Web3 AI",
+      "url": "https://numer.ai",
+      "icon": "fas fa-chart-line",
+      "tags": ["预测市场", "区块链", "金融AI", "Web3"],
+      "isWeb3": true,
+      "isFree": true,
+      "isNew": false,
+      "featured": false,
+      "rating": 4.4
+    },
+    {
+      "id": 8,
+      "name": "Bittensor",
+      "description": "去中心化机器学习网络，通过区块链激励AI模型协作和知识共享",
+      "category": "Web3 AI",
+      "url": "https://bittensor.com",
+      "icon": "fas fa-network-wired",
+      "tags": ["机器学习", "区块链", "去中心化AI", "Web3"],
+      "isWeb3": true,
+      "isFree": true,
+      "isNew": true,
+      "featured": true,
+      "rating": 4.6
+    }
+  ],
+  "stats": {
+    "totalTools": 8,
+    "totalCategories": 8,
+    "freeTools": 4,
+    "web3Tools": 3,
+    "newTools": 2,
+    "featuredTools": 5
+  }
+}
